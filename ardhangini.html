@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ardhangini Proposal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        #ardhanginiContainer {
+            margin-top: 20px;
+            position: relative;
+            width: 320px;
+            height: 120px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #ardhanginiContainer p {
+            font-size: 1.5rem;
+            color: #b30059;
+            margin-bottom: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #yesBtn {
+            background: linear-gradient(45deg, #ff66b2, #ff3399);
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-right: 20px;
+            box-shadow: 0 8px 20px rgba(255, 51, 153, 0.8);
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        #noBtn {
+            background-color: #e60073;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(230, 0, 115, 0.4);
+            transition: background-color 0.3s ease;
+        }
+        #yesBtn:hover {
+            background: linear-gradient(45deg, #ff3399, #ff66b2);
+            transform: scale(1.05);
+        }
+        #noBtn:hover {
+            background-color: #b30059;
+        }
+    </style>
+</head>
+<body class="login-page">
+    <div id="ardhanginiContainer">
+        <p>Will you be My Ardhangini For Life long?</p>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <!-- Hearts for background -->
+    <div class="heart" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="top: 40%; left: 30%; animation-delay: 0.3s;"></div>
+    <div class="heart" style="top: 60%; left: 50%; animation-delay: 0.6s;"></div>
+    <div class="heart" style="top: 80%; left: 70%; animation-delay: 0.9s;"></div>
+    <div class="heart" style="top: 30%; left: 80%; animation-delay: 1.2s;"></div>
+    <div class="heart" style="top: 50%; left: 20%; animation-delay: 1.5s;"></div>
+    <div class="heart" style="top: 70%; left: 40%; animation-delay: 1.8s;"></div>
+    <div class="heart" style="top: 90%; left: 60%; animation-delay: 2.1s;"></div>
+
+    <script>
+        document.getElementById('yesBtn').addEventListener('click', function() {
+            window.location.href = 'proposal.html';
+        });
+        document.getElementById('noBtn').addEventListener('click', function() {
+            alert('Sorry miss No is not acceptable');
+        });
+    </script>
+</body>
+</html>
