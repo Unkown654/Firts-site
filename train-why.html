@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Train Why</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        #trainWhyContainer {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            color: #111; /* darker color */
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        #toKnowBtn {
+            margin-top: 15px;
+            background-color: #330033;
+            border: none;
+            padding: 14px 28px;
+            font-size: 1.4rem;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(51, 0, 51, 0.6);
+            transition: background-color 0.3s ease;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+        }
+        #toKnowBtn:hover {
+            background-color: #660066;
+        }
+    </style>
+</head>
+<body class="login-page">
+    <div id="trainWhyContainer">
+        <p>Once You Asked me when I was in train Why You ?</p>
+        <button id="toKnowBtn">to know</button>
+    </div>
+
+    <!-- Hearts for background -->
+    <div class="heart" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="top: 40%; left: 30%; animation-delay: 0.3s;"></div>
+    <div class="heart" style="top: 60%; left: 50%; animation-delay: 0.6s;"></div>
+    <div class="heart" style="top: 80%; left: 70%; animation-delay: 0.9s;"></div>
+    <div class="heart" style="top: 30%; left: 80%; animation-delay: 1.2s;"></div>
+    <div class="heart" style="top: 50%; left: 20%; animation-delay: 1.5s;"></div>
+    <div class="heart" style="top: 70%; left: 40%; animation-delay: 1.8s;"></div>
+    <div class="heart" style="top: 90%; left: 60%; animation-delay: 2.1s;"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('trainWhyContainer').style.display = 'block';
+
+            document.getElementById('toKnowBtn').addEventListener('click', function() {
+                window.location.href = 'train-question.html';
+            });
+        });
+    </script>
+</body>
+</html>

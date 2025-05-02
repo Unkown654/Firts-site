@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Knew It</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        #knewItContainer {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            color: #b30059;
+            font-size: 1.5rem;
+        }
+        #nextBtn {
+            margin-top: 15px;
+            background-color: #ff66b2;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(255, 102, 178, 0.4);
+            transition: background-color 0.3s ease;
+        }
+        #nextBtn:hover {
+            background-color: #e055a3;
+        }
+    </style>
+</head>
+<body class="login-page">
+    <div id="knewItContainer">
+        <p>I knew it You Also Want me</p>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <!-- Hearts for background -->
+    <div class="heart" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="top: 40%; left: 30%; animation-delay: 0.3s;"></div>
+    <div class="heart" style="top: 60%; left: 50%; animation-delay: 0.6s;"></div>
+    <div class="heart" style="top: 80%; left: 70%; animation-delay: 0.9s;"></div>
+    <div class="heart" style="top: 30%; left: 80%; animation-delay: 1.2s;"></div>
+    <div class="heart" style="top: 50%; left: 20%; animation-delay: 1.5s;"></div>
+    <div class="heart" style="top: 70%; left: 40%; animation-delay: 1.8s;"></div>
+    <div class="heart" style="top: 90%; left: 60%; animation-delay: 2.1s;"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('knewItContainer').style.display = 'block';
+
+            document.getElementById('nextBtn').addEventListener('click', function() {
+                window.location.href = 'train-why.html';
+            });
+        });
+    </script>
+</body>
+</html>
